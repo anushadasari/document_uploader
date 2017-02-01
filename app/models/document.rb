@@ -2,21 +2,21 @@
 #
 # Table name: documents
 #
-#  id                :integer          not null, primary key
-#  category          :integer
-#  name              :string(255)
-#  content_type      :string(255)
-#  size              :integer 
-#  doc_updated_at    :datetime
-#  s3_status         :integer
-#  reference_number  :integer
-#  validity_start    :datetime
-#  validity_end      :datetime
-#  uploaded_by       :integer
-#  documentable_id   :integer
-#  documentable_type :string(255)
-#  created_at        :datetime         not null
-#  updated_at        :datetime         not null
+#  id                      :integer          not null, primary key
+#  category                :integer
+#  attachment_file_name    :string(255)
+#  attachment_content_type :string(255)
+#  attachment_file_size    :integer
+#  attachment_updated_at   :datetime
+#  s3_status               :integer
+#  reference_number        :integer
+#  validity_start          :datetime
+#  validity_end            :datetime
+#  uploaded_by             :integer
+#  documentable_id         :integer
+#  documentable_type       :string(255)
+#  created_at              :datetime         not null
+#  updated_at              :datetime         not null
 #
 
 class Document < ActiveRecord::Base
