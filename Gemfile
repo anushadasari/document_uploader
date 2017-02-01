@@ -7,6 +7,7 @@ gem 'rails', '4.2.6'
 
 gem 'mysql2'
 
+gem 'annotate_models'
 # for managing file uploads
 gem "paperclip", "~> 4.3.6"
 
