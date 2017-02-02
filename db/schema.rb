@@ -590,20 +590,20 @@ ActiveRecord::Schema.define(version: 20170131143613) do
   end
 
   create_table "documents", force: :cascade do |t|
-    t.integer  "category",          limit: 2
-    t.string   "name",              limit: 255
-    t.string   "content_type",      limit: 255
-    t.integer  "size",              limit: 8
-    t.datetime "doc_updated_at"
-    t.integer  "s3_status",         limit: 2
-    t.integer  "reference_number",  limit: 4
+    t.integer  "category",                limit: 2
+    t.string   "attachment_file_name",    limit: 255
+    t.string   "attachment_content_type", limit: 255
+    t.integer  "attachment_file_size",    limit: 4
+    t.datetime "attachment_updated_at"
+    t.integer  "s3_status",               limit: 2
+    t.integer  "reference_number",        limit: 4
     t.datetime "validity_start"
     t.datetime "validity_end"
-    t.integer  "uploaded_by",       limit: 3
-    t.integer  "documentable_id",   limit: 4
-    t.string   "documentable_type", limit: 255
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.integer  "uploaded_by",             limit: 3
+    t.integer  "documentable_id",         limit: 4
+    t.string   "documentable_type",       limit: 255
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
 end

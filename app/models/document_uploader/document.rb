@@ -19,7 +19,7 @@
 #  updated_at              :datetime         not null
 #
 
-class Document < ActiveRecord::Base
+class DocumentUploader::Document < ActiveRecord::Base
 	
 	validates :documentable_id, :documentable_type, presence: true
 
