@@ -21,6 +21,7 @@
 
 class DocumentUploader::Document < ActiveRecord::Base
 	
+	self.table_name="documents"
 	validates :documentable_id, :documentable_type, presence: true
 
 	if Rails.env.development?
